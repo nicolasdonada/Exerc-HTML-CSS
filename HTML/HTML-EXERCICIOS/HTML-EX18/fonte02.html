@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: constellation;
+            src: url("fonts/The Constellation.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+                Tipos de format()
+                - opentype(otf)
+                - truetype(ttf)
+                - embedded-epentype 
+                - truetype-aat (Apple Advanced Typegraphy)
+                - svg
+            */
+
+        }
+
+        body{
+            font-family: "constellation", Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+        p{
+            font-size: 40px;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde animi, facere asperiores ipsum porro. Architecto magni, debitis, necessitatibus, tempore earum explicabo possimus fuga adipisci dolorum unde temporibus quae. Delectus.</p>
+</body>
+</html>
