@@ -89,7 +89,26 @@ main {
     width: 800px;
     margin: auto;
     padding: 0px 10px 0px 10px;
-    border-radius: 7px;
+    border-radius: 0px 0px 7px 7px;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.359);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    padding: 2px 3px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
 }
 
 main p, h2, h3 {
@@ -98,6 +117,9 @@ main p, h2, h3 {
 
 main p {
     padding: 15px 0px 15px 0px;
+    text-indent: 25px;
+    line-height: 2em;
+    font-size: 1em;
 }
 
 
@@ -111,15 +133,24 @@ main h1 {
 main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
-    background-image: linear-gradient(to right, var(--cor1), white);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
     padding-left: 7px;
     margin: 15px 0px 15px 0px;
 }
 
 #div-iframe {
-    background-color: var(--cor4);
-    padding: 100px;
-    width: auto;  
+    background-color: var(--cor4); 
+    margin: 0px -10px; 
+    padding: 20px;
+    position: relative;
+    padding-bottom: 55%;
+}
+#div-iframe > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 main img {
@@ -127,13 +158,15 @@ main img {
 }
 
 main img.pequena {
-    width: 65%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
 main > article > aside > ul {
     margin-left: 30px;
+    columns: 2;
+    line-height: 1.5em;
 }
 
 main > article > aside {
